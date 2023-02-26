@@ -1,0 +1,14 @@
+body{
+  background-image: url("../img/background.png");
+  background-repeat: repeat;
+
+}
+
+.video-content {
+  position: relative;
+  display: inline-block;
+}
+.video-content video {
+  float: left;
+  width: 100%;
+}
