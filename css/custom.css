@@ -12,3 +12,21 @@ body{
   float: left;
   width: 100%;
 }
+
+#banner_section{
+  display: none;
+}
+
+#desplegar{
+  cursor: pointer;
+}
+
+.blur{
+  filter: blur(2px);
+}
+
+#mobile_nav{
+  position: fixed;
+  z-index: 10;
+}
+

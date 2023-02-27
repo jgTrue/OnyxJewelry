@@ -12,31 +12,61 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body class="bg-dark bg-opacity-10">
     <div class="content h-100">
+        <nav>
+            <header id="default_nav" class="p-3 text-bg-dark bg-gradient bg-opacity-100">
+                <div>
+                    <div class="d-flex flex-wrap align-items-center justify-content-lg-start">
 
-        <header class="p-3 text-bg-dark bg-gradient bg-opacity-100">
-            <div>
-                <div class="d-flex flex-wrap align-items-center justify-content-lg-start">
-
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-start mb-md-0 fs-5">
-                        <li><a href="#" class="nav-link px-2 text-white fst-italic"><i class="bi bi-house p-2"></i>ONYX
-                                JEWELRY</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white"><i class="bi bi-gem p-2"></i>Joyería</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white"><i class="bi bi-bag p-2"></i>Tiendas</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white"><i
-                                    class="bi bi-info-square p-2"></i>Historia</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white"><i class="bi bi-envelope p-2"></i>Contactar</a>
-                        </li>
-                    </ul>
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-start mb-md-0 fs-5">
+                            <li><a href="index.html" class="nav-elem px-2 py-4 text-white fst-italic text-decoration-none"><i
+                                        class="bi bi-house p-2"></i>ONYX JEWELRY</a></li>
+                            <li><a href="#joyeria" class="nav-elem px-2 py-4 text-white text-decoration-none "></i>Joyería</a></li>
+                            <li><a href="#tienda" class="nav-elem px-2 py-4 text-white text-decoration-none">Tiendas</a></li>
+                            <li><a href="#historia" class="nav-elem px-2 py-4 text-white text-decoration-none">Historia</a></li>
+                            <li><a href="#contacto" class="nav-elem px-2 py-4 text-white text-decoration-none">Contactar</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <div>
+            </header>
+
+            <nav id="mobile_nav" class="navbar navbar-dark bg-dark container-fluid" aria-label="Dark offcanvas navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand fst-italic fw-light" href="index.html"><i
+                    class="bi bi-house p-2"></i>ONYX JEWELRY</a></li></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark h-25" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+                    <div class="offcanvas-header my-0 py-1">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel"><i
+                        class="bi bi-house"></i></h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body py-1">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li><a href="#joyeria" class="nav-link px-2 text-white"></i>Joyería</a></li>
+                            <li><a href="#tienda" class="nav-link px-2 text-white">Tiendas</a></li>
+                            <li><a href="#historia" class="nav-link px-2 text-white">Historia</a></li>
+                            <li><a href="#contacto" class="nav-link px-2 text-white">Contactar</a>
+                            </li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+        </nav>
+
+        <div id="banner_section">
             <div class="text-center">
-                <img class="img-fluid w-100" src="./img/banner.webp" alt="" srcset="">
+                <img id="banner" class="img-fluid w-100" src="./img/banner.webp" alt="Banner">
             </div>
             <div class="p-4 p-md-5 text-white bg-black mb-5 bg-opacity-75">
                 <div class="col-md-6 px-0">
@@ -48,7 +78,7 @@
                 </div>
             </div>
 
-            <article class="text-center">
+            <article id="joyeria" class="text-center">
                 <h2>MAGNÍFICAS CREACIONES</h2>
                 <p class="lead fw-semibold">Gemas extraordinarias, diseños y artesanía sin precedentes se unen en
                     algunas de las piezas más
@@ -60,7 +90,7 @@
                 <div class="col my-3">
                     <div class="card shadow-sm border-1 bg-dark">
 
-                        <img class="img-fluid" src="./img/image_1.webp" alt="" srcset="">
+                        <img id="img_1" class="img-fluid" src="./img/image_1.webp" alt="" srcset="">
                         <div
                             class="card-body bg-dark bg-gradient text-white border-dark border-2 border-top text-center">
                             <h4 class="fst-italic fw-light">Colección de alta joyería</h4>
@@ -70,7 +100,7 @@
                 <div class="col my-3">
                     <div class="card shadow-sm border-1 bg-dark">
 
-                        <img class="img-fluid" src="./img/image_2.webp" alt="" srcset="">
+                        <img id="img_2" class="img-fluid" src="./img/image_2.webp" alt="" srcset="">
                         <div
                             class="card-body bg-dark bg-gradient text-white border-dark border-2 border-top text-center">
                             <h4 class="fst-italic fw-light">Creación artesanía romana</h4>
@@ -80,7 +110,7 @@
                 <div class="col my-3">
                     <div class="card shadow-sm border-1 bg-dark">
 
-                        <img class="img-fluid" src="./img/image_3.webp" alt="" srcset="">
+                        <img id="img_3" class="img-fluid" src="./img/image_3.webp" alt="" srcset="">
                         <div
                             class="card-body bg-dark bg-gradient text-white border-dark border-2 border-top text-center">
                             <h4 class="fst-italic fw-light">Temporada minimalista</h4>
@@ -90,7 +120,8 @@
             </section>
 
             <article class="text-center">
-                <h2>EL REGALO PERFECTO</h2><p class="lead fw-semibold">Elegancia, diseño, exclusividad.</p>
+                <h2>EL REGALO PERFECTO</h2>
+                <p class="lead fw-semibold">Elegancia, diseño, exclusividad.</p>
             </article>
 
             <div class="video-content my-5">
@@ -103,8 +134,9 @@
                 </video>
             </div>
 
-            <article class="text-center">
-                <h2>NUESTRAS TIENDAS</h2><p class="lead fw-semibold">Estamos situados en diferentas ciudades.</p>
+            <article id="tienda" class="text-center">
+                <h2>NUESTRAS TIENDAS</h2>
+                <p class="lead fw-semibold">Estamos situados en diferentas ciudades.</p>
             </article>
 
             <section class="m-0 px-5 pt-5 bg-black bg-opacity-75 text-white w-100 my-5" id="featured-3">
@@ -151,18 +183,27 @@
                 </div>
             </section>
 
-            <article class="text-center">
-                <h2 class="fst-italic">ONYX JEWELRY</h2><p class="lead fw-semibold">El nacimiento de nuestra pasión.</p>
+            <article id="historia" class="text-center">
+                <h2 class="fst-italic">ONYX JEWELRY</h2>
+                <p class="lead fw-semibold">El nacimiento de nuestra pasión.</p>
             </article>
 
-            <section class="d-flex flex-wrap row m0 bg-black bg-opacity-75 text-white w-100 my-5 justify-content-lg-evenly m-0">
+            <section
+                class="d-flex flex-wrap row m0 bg-black bg-opacity-75 text-white w-100 my-5 justify-content-lg-evenly m-0">
                 <div class="col-md-8 order-2 order-lg-1 p-5 m-0">
 
                     <h2 class="fw-normal lh-1 px-2"><i class="bi bi-briefcase px-4"></i>¿Quién somos?</h2>
                     <hr>
-                    <p class="lead">La historia del nacimiento de ONYX JEWELRY comenzó hace varias décadas con un pequeño taller de joyería familiar. Con un gran amor y habilidad por la joyería, trabajamos duro para crear piezas únicas y de alta calidad.
-                        <br><br>Con el tiempo, la fama de nuestras joyas se extendió y comenzamos a recibir pedidos de clientes en todo el país. A medida que la demanda crecía, decidimos expandir nuestro negocio y abrir la primera tienda en una zona comercial importante.
-                        <br><br>Tuvimos un gran éxito y comenzamos a abrir más sucursales en diferentes ciudades del país. En poco tiempo, la empresa se había convertido en una marca reconocida en la industria de la joyería, ofreciendo una amplia gama de productos y un servicio excepcional.</p>
+                    <p class="lead">La historia del nacimiento de ONYX JEWELRY comenzó hace varias décadas con un
+                        pequeño taller de joyería familiar. Con un gran amor y habilidad por la joyería, trabajamos duro
+                        para crear piezas únicas y de alta calidad.
+                        <br><br>Con el tiempo, la fama de nuestras joyas se extendió y comenzamos a recibir pedidos de
+                        clientes en todo el país. A medida que la demanda crecía, decidimos expandir nuestro negocio y
+                        abrir la primera tienda en una zona comercial importante.
+                        <br><br>Tuvimos un gran éxito y comenzamos a abrir más sucursales en diferentes ciudades del
+                        país. En poco tiempo, la empresa se había convertido en una marca reconocida en la industria de
+                        la joyería, ofreciendo una amplia gama de productos y un servicio excepcional.
+                    </p>
                 </div>
                 <div class="col-md-4 order-1 order-lg-2 p-5">
                     <img class="img-fluid" src="./img/us.webp" alt="" srcset="">
@@ -170,27 +211,68 @@
                 </div>
             </section>
 
-            <article class="text-center my-5">
+            <article id="contacto" class="text-center my-5">
                 <h2 class="fst-italic">Contactanos</h2>
                 <p class="lead fw-semibold">Estamos a su disposición para ofrecer el mejor servicio.</p>
             </article>
 
             <div class="row m-0 bg-dark bg-gradient text-white w-100">
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
-                  <div class="col-md-4 d-flex align-items-center">
-                    
-                    <span class="mb-3 mb-md-0 fs-5"><i class="bi bi-gem px-5 fs-2"></i>© 2023 Onyx Jewelry</span>
+                <div class="d-grid justify-content-center text-center">
+                    <i id="desplegar" class="bi bi-arrow-bar-down fs-3"></i>
+                </div>
+                <form id="formulario" name="formulario" class="p-5 align-content-center" method="post">
 
-                  </div>
-              
-                  <ul class="nav col-md-4 d-flex align-items-end justify-content-end list-unstyled d-flex px-5">
-                    <li><h5 class="fw-normal">SIGUENOS:</h5></li>
-                    <li class="ms-3"><a class="text-muted" href="#"><span class="mt-1"><i class="bi bi-instagram fs-2"></i></span></a></li>
-                    <li class="ms-3"><a class="text-muted" href="#"><span class="mt-1"><i class="bi bi-linkedin fs-2"></i></span></a></li>
-                    <li class="ms-3"><a class="text-muted" href="#"><span class="mt-1"><i class="bi bi-pinterest fs-2"></i></span></a></li>
-                  </ul>
+                    <div class="form-outline mb-4 px-5">
+                        <label class="form-label" for="form4Example1">Email</label>
+                        <input placeholder="Dirección de correo electrónico" type="email" id="email" name="email" class="form-control"
+                            required autofocus />
+                    </div>
+
+                    <div class="form-outline mb-4 px-5">
+                        <label class="form-label" for="form4Example3">Mensaje</label>
+                        <textarea placeholder='Escribir aquí...' class="form-control" id="textA" name="textA" rows="4"
+                            required></textarea>
+                    </div>
+
+                    <div class="mb-4 px-5">
+                        <button id="enviarF" type="button" class="btn bg-dark bg-gradient text-white border-2 border-light btn-block fw-semibold" 
+                        tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" data-bs-content="Actualmente este apartado no se encuentra disponible, disculpe las molestias." disabled>Enviar</button>
+                        
+                    </div>
+
+                </form>
+                <footer class="d-flex flex-wrap justify-content-evenly align-items-center py-3 my-4 border-top ">
+                    <div class="col-md-4 d-flex align-items-center order-1 order-lg-1 order-md-1 order-sm-1">
+
+                        <a class="mb-3 mb-md-0 fs-5 text-decoration-none text-white" href="index.html"><i class="bi bi-gem px-lg-5 px-md-2 px-sm-2 px-2 fs-2"></i>© 2023 Onyx
+                            Jewelry</a>
+
+                    </div>
+
+                    <div class="order-lg-3 order-md-3 order-sm-3 order-3">
+                        <a class="text-decoration-none text-white" rel="license"
+                            href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                            <img alt="Licencia de Creative Commons" style="border-width:0"
+                                src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                        </a>
+
+                    </div>
+
+
+                    <ul
+                        class="nav col-md-4 d-flex align-items-end justify-content-end list-unstyled d-flex px-5 px-sm-2 py-2 py-sm-2 order-lg-3 order-md-3 order-sm-2 order-2">
+                        <li>
+                            <h5 class="fw-normal">SIGUENOS:</h5>
+                        </li>
+                        <li class="ms-3"><a class="text-muted social-media text-decoration-none text-white" target="_blank" href="https://www.instagram.com/jairogarciia/"><span class="mt-1"><i
+                                        class="bi bi-instagram fs-2"></i></span></a></li>
+                        <li class="ms-3"><a class="text-muted social-media text-decoration-none text-white" target="_blank" href="https://www.linkedin.com/in/jairo-garcía-barrera-8289bb222/"><span class="mt-1"><i
+                                        class="bi bi-linkedin fs-2"></i></span></a></li>
+                        <li class="ms-3"><a class="text-muted social-media text-decoration-none text-white" target="_blank" href="https://www.pinterest.es/bulgari/?eq=bulgari&etslf=14999"><span class="mt-1"><i
+                                        class="bi bi-pinterest fs-2"></i></span></a></li>
+                    </ul>
                 </footer>
-              </div>
+            </div>
 
         </div>
 
